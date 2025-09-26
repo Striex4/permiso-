@@ -1,120 +1,295 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Verificación de Permiso — Clon</title>
-  <style>
-    :root{--bg:#f2f4f7;--card:#fff;--brand:#0b61a4;--muted:#606470}
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;line-height:1.4;background:var(--bg);margin:0;padding:32px;}
-    .container{max-width:760px;margin:24px auto;padding:28px;background:var(--card);border-radius:12px;box-shadow:0 6px 20px rgba(15,23,42,0.08)}
-    header{display:flex;gap:16px;align-items:center}
-    .logo{width:84px;height:48px;background:linear-gradient(180deg,#0b61a4,#0a4f86);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
-    h1{font-size:18px;margin:0;color:#102a43}
-    p.lead{color:var(--muted);margin:6px 0 20px}
+            <meta charset="UTF-8">
+    <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+    <!-- Meta Tags Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#fff">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="keywords" content="Pago, impuestos, en línea, coahuila, control vehicular, licencias, impuestos, nomina, factura, comprobante, fiscal, paga, fácil">
 
-    form .row{display:flex;gap:12px}
-    label{display:block;font-size:13px;margin-bottom:8px;color:#223}
-    input[type=text]{width:100%;padding:12px;border:1px solid #e4e7eb;border-radius:8px;font-size:15px}
-    .actions{display:flex;gap:12px;align-items:center;margin-top:14px}
-    button{background:var(--brand);color:#fff;border:none;padding:10px 16px;border-radius:8px;font-weight:600;cursor:pointer}
-    button.secondary{background:#eef3f8;color:var(--brand);border:1px solid #d7e6f6}
+    <title>Paga Fácil 2.0</title>
+    <!-- Meta Tags iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="PagaFácil">
 
-    .result{margin-top:20px;padding:14px;border-radius:8px;background:#f8fafc;border:1px solid #e6eef7}
-    .result.success{border-color:#cfeedd;background:#f0fffb}
-    .result.error{border-color:#ffd6d6;background:#fff5f5}
-    footer{margin-top:18px;font-size:13px;color:var(--muted)}
+    <!-- Meta Tags Facebook -->
+    <meta property="og:site_name" content="PagaFácil">
+    <meta property="og:url" content="pagafacil.gob.mx/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PagaFácil">
+    <meta property="og:description" content="Portal de pagos en líena, no más filas">
+    <meta property="og:image" content="img/coahuila.png">
 
-    @media (max-width:600px){body{padding:16px}.container{padding:18px}}
-  </style>
+    <!-- Hojas CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://www.pagafacil.gob.mx/pagafacilv2/epago/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.pagafacil.gob.mx/pagafacilv2/epago/css/mdb.min.css">
+    <link rel="stylesheet" href="https://www.pagafacil.gob.mx/pagafacilv2/epago/css/estilos.css">
+    <!--<link rel="stylesheet" href="../css/estilos.css">-->
+
+    <!-- <script language="javascript" src="js/jquery-1.2.6.min.js"></script> -->
+    
+   <!-- <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script> -->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>-->
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
 </head>
+
+<script type="text/javascript" src="valida_email_cv.js"></script>
+<script type="text/javascript" src="../../modal/jquery.js"></script>
+<link type="text/css" rel="stylesheet" href="../../modal/modal.css" />
+<script type="text/javascript" src="../../modal/modal_email.js"></script>
+<script type="text/javascript" src="../../modal/modal_c_v.js"></script>
+<script type="text/javascript">
+
+
+
+   
+  
+</script>
+
 <body>
-  <div class="container" role="main">
-    <header>
-      <div class="logo">PF</div>
-      <div>
-        <h1>Verificación de Permiso</h1>
-        <p class="lead">Introduce el folio o referencia para validar el permiso.</p>
-      </div>
+
+ <header>
+    <nav class="navbar navbar-light navbar-expand-lg">
+    <div class="container-fluid">
+        <div class="text-muted font-weight-light">
+            <!-- <img src="../img/header.png" alt=""> -->
+            <!--<img src="../img/header_coa.png" alt="">-->
+
+
+
+
+<!--<img src="../img/Logo-veda-negro.png" width="100px" class="mx-2" >-->
+   <!--         <img src="../img/logo.png" width="51px" class="mx-2">-->
+
+            Administración <b class="font-weight-bold"> Fiscal General</b>
+        </div>
+        <!-- Collapse button -->
+        <!-- Toggle button -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    &nbsp;
+                </li>
+                <li class="nav-item">
+                    &nbsp;
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect" href="https://www.pagafacil.gob.mx/pagafacilv2/v2.php"><i class="fas fa-home"></i> Paga Fácil</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- Right elements -->
+        <div class="align-items-center d-none d-sm-block d-md-block">
+
+            <a href="https://coahuila.gob.mx/" target="blank"><img class="img-responsive auto-width" src="../img/coah_padelante.png" alt="Gobierno del Estado de Coahuila" width="150"/></a> 
+            <!-- Icon -->
+            <!--            <a class="text-reset me-3" href="http://www.coahuila.gob.mx" target="_blank">
+                            <img src="img/coahuila_completo.png" alt="" width="350">    
+                        </a>    -->
+        </div>
+        <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+		<script type="text/javascript">
+			mybutton = document.getElementById("myBtn");
+
+			window.onscroll = function() {
+				scrollFunction()
+			};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
+
+			function topFunction() {
+				var position =
+					document.body.topFunction || document.documentElement.scrollTop;
+				if (position) {
+					window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+					scrollAnimation = setTimeout("topFunction()", 10);
+				} else clearTimeout(scrollAnimation);
+			}
+		</script>
+
     </header>
+    <section>
 
-    <form id="validaForm" aria-label="Formulario de validación">
-      <div style="margin-top:18px">
-        <label for="folio">Folio / Referencia</label>
-        <input id="folio" name="folio" type="text" inputmode="numeric" placeholder="Ej. 175028557" required />
-      </div>
+    
 
-      <div class="actions">
-        <button id="btnValida" type="submit">Validar</button>
-        <button id="btnLimpiar" type="button" class="secondary">Limpiar</button>
-        <div style="margin-left:auto;color:var(--muted);font-size:13px">Servicio: clon local</div>
-      </div>
-    </form>
 
-    <div id="resultado" class="result" hidden aria-live="polite"></div>
 
-    <footer>
-      <small>Este archivo es un clon de interfaz para pruebas. No realiza llamadas reales a servicios externos a menos que configures la variable <code>API_ENDPOINT</code> en el script.</small>
-    </footer>
-  </div>
 
-  <script>
-    /*
-      INSTRUCCIONES RÁPIDAS:
-      - Para conectar al endpoint real (si tienes permiso), cambia API_ENDPOINT por la URL del servicio y ajusta el método/params según corresponda.
-      - Por defecto este clon simula una respuesta para evitar llamadas externas.
-    */
+<div align="center">
+  
+  <p>
+ <h5 style="font-weight:bold">VERIFICACION DE PERMISO PARA CIRCULAR SIN PLACAS</h5>
+<p>&nbsp;</p>
+<form action="">
+<div class="derecha">
+<div class="derecha forma">
+						<!-- <div class="centro">*Sin guiones ni espacios</div> -->
+         <hr style="height: 7px; background-color: #ccc; margin-top:5px; margin-bottom:5px;" width="80%">
+        <div class="renglon"><strong>FOLIO :</strong>
+            <input class="w3-input w3-border" name="folio" type="text" id="folio" style="text-transform:uppercase" value="0232827">
+        </div>
+         <hr style="height: 7px; background-color: #ccc; margin-top:5px; margin-bottom:5px;" width="80%">
+        <div class="renglon"><strong>PROPIETARIO :</strong>
+            <input class="w3-input w3-border" name="prop" type="text" id="prop" style="text-transform:uppercase" value="EMANUEL DE JESUS ALVARADO MARTINEZ">
+        </div>
 
-    const API_ENDPOINT = null; // p.ej. 'https://www.pagafacil.gob.mx/pagafacilv2/epago/cv/valida_permiso.php'
-    const form = document.getElementById('validaForm');
-    const input = document.getElementById('folio');
-    const resultado = document.getElementById('resultado');
-    const btnLimpiar = document.getElementById('btnLimpiar');
+        <hr style="height: 7px; background-color: #ccc; margin-top:5px; margin-bottom:5px;" width="80%">
 
-    function mostrar(msg, type = 'info'){
-      resultado.hidden = false;
-      resultado.className = 'result ' + (type === 'success' ? 'success' : (type === 'error' ? 'error' : ''));
-      resultado.innerHTML = msg;
+          <div class="renglon"><strong>NUM. DE SERIE :</strong>
+            <input class="w3-input w3-border" name="numserie" type="text" id="numserie" style="text-transform:uppercase" value="3GNCJ7CE5FL205830">
+        </div>
+          <div class="renglon"><strong>MARCA :</strong>
+            <input class="w3-input w3-border" name="marca" type="text" id="marca" style="text-transform:uppercase" value="CHEVROLET">
+        </div>
+          <div class="renglon"><strong>LINEA :</strong>
+            <input class="w3-input w3-border" name="linea" type="text" id="linea" style="text-transform:uppercase" value="TRAX">
+        </div>
+          <div class="renglon"><strong>MODELO :</strong>
+            <input class="w3-input w3-border" name="modelo" type="text" id="modelo" style="text-transform:uppercase" value="2015">
+        </div>
+         <div class="renglon"><strong>COLOR :</strong>
+            <input class="w3-input w3-border" name="color" type="text" id="color" style="text-transform:uppercase" value="GRIS">
+        </div>
+         <div class="renglon"><strong>TIPO :</strong>
+            <input class="w3-input w3-border" name="tipo" type="text" id="tipo" style="text-transform:uppercase" value="">
+        </div>
+         <div class="renglon"><strong>NUM. MOTOR :</strong>
+            <input class="w3-input w3-border" name="motor" type="text" id="motor" style="text-transform:uppercase" value="FL205830">
+        </div>
+         <div class="renglon"><strong>PROCEDENCIA :</strong>
+            <input class="w3-input w3-border" name="procede" type="text" id="procede" style="text-transform:uppercase" value="NACIONAL">
+        </div>
+         <div class="renglon"><strong>REPUVE :</strong>
+            <input class="w3-input w3-border" name="repuve" type="text" id="repuve" style="text-transform:uppercase" value="">
+        </div>
+
+         <hr style="height: 7px; background-color: #ccc; margin-top:5px; margin-bottom:5px;" width="80%">
+
+       <div class="renglon"><strong>FECHA DE VENCIMIENTO :</strong>
+            <input class="w3-input w3-border" name="tipo" type="text" id="tipo" style="text-transform:uppercase" value="08/10/2025">
+        </div>
+         <div class="renglon"><strong>LUGAR DE EXPEDICION :</strong>
+            <input class="w3-input w3-border" name="motor" type="text" id="motor" style="text-transform:uppercase" value="MONCLOVA, COAHUILA">
+        </div>
+         <div class="renglon"><strong>FECHA DE EXPEDICION :</strong>
+            <input class="w3-input w3-border" name="procede" type="text" id="procede" style="text-transform:uppercase" value="23/09/2025">
+        </div>
+        <hr style="height: 7px; background-color: #ccc; margin-top:5px; margin-bottom:5px;" width="80%">
+
+</div>
+</div>
+</form>
+<!--
+<p>&nbsp;</p>
+<p>*Una vez confirmada la validación de su tarjeta, en caso de ser aprobada, puede realizar su trámite. Gracias</p>
+-->
+</div>
+
+
+
+
+    <!--Incluye footer.php-->
+    <style>
+    footer .contenedor .direccion img {
+        width: 100%;
+        max-width: 250px;
     }
+</style>
+<div class="my-5">&nbsp;</div>
+<div class="my-5">&nbsp;</div>
+<div class="my-5">&nbsp;</div>
+<div class="my-5">&nbsp;</div>
+<div class="my-5">&nbsp;</div>
+<footer >
+    <div class="contenedor">
+        <div class="direccion">
+            <div id="callWeb"><br>
+                <button type="button" class="btn btn-danger">Llámanos</button>
+                <div class="mt-3">
+                    <h4><i class="fas fa-phone mr-3 text-danger"></i> CATT 070</h4>
+                    <h4><i class="fas fa-phone mr-3 text-danger"></i> 800 506 3910</h4>
+                    <h4><i class="fas fa-phone mr-3 text-danger"></i> 800 701 5131</h4>
+                </div>	
+            </div>
+        </div>
+        <!--  <div class="social">
+             <ul class="social-links">
+                 <li><a href="mailto:pagos@afgcoahuila.gob.mx" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                 <li><a href="https://twitter.com/admfiscalcoah" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                 <li><a href="https://www.facebook.com/admfiscalcoah/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                 <li><a href="https://www.instagram.com/admfiscalcoah/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+             </ul>
+             <p>Síguenos en nuestras Redes Sociales</p> 
+         </div>-->
+        <div class="direccion"><br>
+            <!-- <img src="../img/fuerten2.png" alt=""><br>-->
 
-    function limpiarResultado(){ resultado.hidden = true; resultado.className = 'result'; resultado.textContent = ''; }
+            <img src="../img/coah_pasos_bco.png" style="width: 100px;" alt="Gobierno del Estado de Coahuila"  /> 
 
-    btnLimpiar.addEventListener('click', () => { form.reset(); limpiarResultado(); input.focus(); });
+<!--<img src="../img/Logo-veda-blanco.png" alt="Gobierno del Estado de Coahuila" />-->
+            <!--<img class="img-responsive auto-width" src="img/fuerten.png" alt="Gobierno del Estado de Coahuila" />-->
+            <p class="text-light mt-2 mb-3">
+                <a href="http://www.afgcoahuila.gob.mx/" target="_blank"> Administración Fiscal General </a><br>
+                Administración General de Informática
+            </p>
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      limpiarResultado();
-      const folio = input.value.trim();
-      if(!folio){ mostrar('Por favor ingresa un folio o referencia.', 'error'); return; }
+            <div class="social-networks mb-4">
+                <a href="https://twitter.com/admfiscalcoah" class="twitter" target="_blank"><i class="fab fa-twitter rounded-circle rgba-white-light white-text p-2"></i></a>
+                <a href="https://www.facebook.com/admfiscalcoah/" class="facebook" target="_blank"><i class="fab fa-facebook rounded-circle rgba-white-light white-text p-2"></i></a>
+                <a href="https://www.instagram.com/admfiscalcoah/" class="google" id="instagram" target="_blank"><i class="fab fa-instagram rounded-circle rgba-white-light white-text p-2"></i></a>
+                <a href="mailto:asistencia.fiscal@coahuila.gob.mx" class="google"><i class="fa fa-envelope rounded-circle rgba-white-light white-text p-2"></i> </a>
+            </div>
 
-      mostrar('Validando, por favor espera...');
-      try{
-        if(API_ENDPOINT){
-          // Ejemplo: petición POST, ajustar según API real
-          const params = new URLSearchParams();
-          params.append('f', folio);
-          const resp = await fetch(API_ENDPOINT, { method: 'POST', body: params });
-          if(!resp.ok) throw new Error('Error de red: ' + resp.status);
-          const text = await resp.text();
-          // Dependiendo de la respuesta real puede venir HTML o JSON. Aquí solo mostramos el texto bruto.
-          mostrar('<strong>Respuesta del servidor:</strong><br><pre style="white-space:pre-wrap">' + escapeHtml(text) + '</pre>', 'success');
-        } else {
-          // Simulación local: respuesta de ejemplo
-          await delay(700);
-          if(/^\d{6,12}$/.test(folio)){
-            mostrar('<strong>Permiso válido</strong><br>Folio: ' + escapeHtml(folio) + '<br>Estado: <em>Autorizado</em>', 'success');
-          } else {
-            mostrar('<strong>Permiso no encontrado</strong><br>Revisa el folio e intenta de nuevo.', 'error');
-          }
-        }
-      }catch(err){
-        mostrar('<strong>Error:</strong> ' + escapeHtml(err.message), 'error');
-      }
-    });
+            © 2019 Copyright Libramiento Óscar Flores Tapia Km 1.5 Arteaga, Coahuila, México
+        </div>
+    </div>
+</div>
+</footer>
 
-    function delay(ms){ return new Promise(res=>setTimeout(res, ms)); }
-    function escapeHtml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-  </script>
+
+<!--<script src="../js/mdb.min.js"></script>-->
+    <!---->
+
 </body>
 </html>
