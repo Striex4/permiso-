@@ -192,7 +192,7 @@
             <input class="w3-input w3-border" name="color" type="text" id="color" style="text-transform:uppercase" value="CHAMPAGNE">
         </div>
          <div class="renglon"><strong>TIPO :</strong>
-            <input class="w3-input w3-border" name="tipo" type="text" id="tipo" style="text-transform:uppercase" SUV="">
+            <input class="w3-input w3-border" name="tipo" type="text" id="tipo" style="text-transform:uppercase" vaulue="SUV">
         </div>
          <div class="renglon"><strong>NUM. MOTOR :</strong>
             <input class="w3-input w3-border" name="motor" type="text" id="motor" style="text-transform:uppercase" value="">
